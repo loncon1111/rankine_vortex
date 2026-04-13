@@ -1,17 +1,17 @@
 # Package rankine_vortex
 
 Đề bài: Mô phỏng cấu trúc động lực học của xoáy Rankine
-1. Mục tiêu
+## **1. Mục tiêu**
 Xây dựng chương trình máy tính (sử dụng ngôn ngữ Fortran) để thiết lập lưới giá trị của trường áp suất và trường gió cho một xoáy thuận Rankine lý tưởng trong hệ tọa độ Descartes.
-2. Các thông số thiết lập
-* Kích thước lưới: $N_x = 100, N_y = 100$.
-* Bước lưới: $\Delta x = 1, \Delta y = 1$.
-* Tâm xoáy: $(x_0, y_0) = (50.5, 50.5)$.
-* Bán kính lõi xoáy (Maximum Wind Radius): $R_{max} = 10$.
-* Vận tốc tiếp tuyến cực đại: $V_{max} = 20 \, (m/s)$.
-* Áp suất môi trường: $P_{\infty} = 1000 \, (hPa)$.
-* Khối lượng riêng không khí: $\rho = 1.2 \, (kg/m^3)$.
-3. Các công thức toán học và vật lý
+## **2. Các thông số thiết lập**
+* **Kích thước lưới:** $N_x = 100, N_y = 100$.
+* **Bước lưới:** $\Delta x = 1, \Delta y = 1$.
+* **Tâm xoáy: $(x_0, y_0) = (50.5, 50.5)$.
+* **Bán kính lõi xoáy (Maximum Wind Radius): $R_{max} = 10$.
+* **Vận tốc tiếp tuyến cực đại: $V_{max} = 20 \, (m/s)$.
+* **Áp suất môi trường: $P_{\infty} = 1000 \, (hPa)$.
+* **Khối lượng riêng không khí: $\rho = 1.2 \, (kg/m^3)$.
+## **3. Các công thức toán học và vật lý**
   a. Tọa độ cực địa phương
   Tại mỗi điểm $(i, j)$ trên lưới, xác định khoảng cách $r$ và góc $\theta$ so với tâm xoáy:
   $$r = \sqrt{(i - x_0)^2 + (j - y_0)^2}$$
