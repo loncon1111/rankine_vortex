@@ -20,18 +20,26 @@ $$\theta = \arctan2(j - y_0, i - x_0)$$
 ### b. Trường vận tốc tiếp tuyến ($V_t$)
 Vận tốc được xác định theo mô hình Rankine:
 * **Vùng lõi** ($r \le R_{max}$): Xoáy vật rắn (Solid body rotation).
-  $$V_t(r) = V_{max} \frac{r}{R_{max}}$$
+$$V_t(r) = V_{max} \frac{r}{R_{max}}$$
 * **Vùng ngoài** ($r > R_{max}$): Xoáy phi ma sát (Irrotational flow).
-  $$V_t(r) = V_{max} \frac{R_{max}}{r}$$
+$$V_t(r) = V_{max} \frac{R_{max}}{r}$$
 ### c. Chuyển đổi sang hệ tọa độ Descartes ($u, v$)
 $$u = -V_t \sin(\theta)$$
 $$v = V_t \cos(\theta)$$
 ### d. Trường áp suất ($P$)
 Áp suất được tính toán dựa trên phương trình cân bằng lực ly tâm $\frac{1}{\rho} \frac{dP}{dr} = \frac{V_t^2}{r}$:
 * **Vùng ngoài** ($r > R_{max}$):
-$$P(r) = P_{\infty} - \frac{1}{2} \rho \left( V_{max} \frac{R_{max}}{r} \right)^2$$
+$$
+\begin{aligned}
+P(r) = P_{\infty} - \frac{1}{2} \rho \left( V_{max} \frac{R_{max}}{r} \right)^2
+\end{aligned}
+$$
 * **Vùng trong** ($r \le R_{max}$):
-$$P(r) = P(R_{max}) - \int_r^{R_{max}} \rho \frac{V_t^2}{r} dr = P_{\infty} - \rho V_{max}^2 \left( 1 - \frac{1}{2} \frac{r^2}{R_{max}^2} \right)$$
+$$
+\begin{aligned}
+P(r) = P(R_{max}) - \int_r^{R_{max}} \rho \frac{V_t^2}{r} dr = P_{\infty} - \rho V_{max}^2 \left( 1 - \frac{1}{2} \frac{r^2}{R_{max}^2} \right)
+\end{aligned}
+$$
 ## 4. Yêu cầu sản phẩm
 * **Mã nguồn:** Viết bằng Fortran, xuất dữ liệu ra định dạng binary trực tiếp *(access='direct')*.
 * **Tệp điều khiển (.ctl):** Để GrADS có thể đọc và hiển thị 3 biến: p (áp suất), u (gió đông-tây), v (gió nam-bắc).
