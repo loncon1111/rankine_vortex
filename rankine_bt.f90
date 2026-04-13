@@ -21,7 +21,7 @@ PROGRAM rankine
    do i = 1, nx
    do j = 1, ny
       ! Buoc 3.a
-      r     = sqrt( (real(i) - x0)**2 + (real(j) - y0)**2 ) 
+      r     = sqrt( (real(i) - x0)**2 + (real(i) - y0)**2 ) 
       theta = atan2( real(j) - y0, real(j) - x0 )
       ! Buoc 3.b
       if ( r .le. rmax) then
