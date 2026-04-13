@@ -28,9 +28,9 @@ $$u = -V_t \sin(\theta)$$
 $$v = V_t \cos(\theta)$$
 ### d. Trường áp suất ($P$)
 Áp suất được tính toán dựa trên phương trình cân bằng lực ly tâm $\frac{1}{\rho} \frac{dP}{dr} = \frac{V_t^2}{r}$:
-* **Vùng ngoài** ($r > R_{max}$):\\
+* **Vùng ngoài** ($r > R_{max}$):
 $$P(r) = P_{\infty} - \frac{1}{2} \rho \left( V_{max} \frac{R_{max}}{r} \right)^2$$
-* **Vùng trong** ($r \le R_{max}$):\\
+* **Vùng trong** ($r \le R_{max}$):
 $$P(r) = P(R_{max}) - \int_r^{R_{max}} \rho \frac{V_t^2}{r} dr = P_{\infty} - \rho V_{max}^2 \left( 1 - \frac{1}{2} \frac{r^2}{R_{max}^2} \right)$$
 ## 4. Yêu cầu sản phẩm
 * **Mã nguồn:** Viết bằng Fortran, xuất dữ liệu ra định dạng binary trực tiếp *(access='direct')*.
