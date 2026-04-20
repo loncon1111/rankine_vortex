@@ -32,6 +32,13 @@ $$v = V_t \cos(\theta)$$
 $$P(r) = P_{\infty} - \frac{1}{2} \rho \left( V_{max} \frac{R_{max}}{r} \right)^2$$
 * **Vùng trong** ($r \le R_{max}$):
 $$P(r) = P(R_{max}) - \int_r^{R_{max}} \rho \frac{V_t^2}{r} dr = P_{\infty} - \rho V_{max}^2 \left( 1 - \frac{1}{2} \frac{r^2}{R_{max}^2} \right)$$
+
+## Bổ sung tịnh tiến
+* Thông số dịch chuyển:Vị trí tâm ban đầu: $(x_0, y_0) = (50.5, 50.5)$.
+* Vận tốc tịnh tiến sang trái (hướng Tây): $U_c = -5.0$ m/s; $V_c = 0.0$ m/s.
+* Thời gian khảo sát: $t = 10$ (đơn vị thời gian giả định).
+* Bước thời gian: $\delta_t = 0.01$
+
 ## 4. Yêu cầu sản phẩm
 * **Mã nguồn:** Viết bằng Fortran, xuất dữ liệu ra định dạng binary trực tiếp *(access='direct')*.
 * **Tệp điều khiển (.ctl):** Để GrADS có thể đọc và hiển thị 3 biến: p (áp suất), u (gió đông-tây), v (gió nam-bắc).
