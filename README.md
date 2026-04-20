@@ -37,7 +37,19 @@ $$P(r) = P(R_{max}) - \int_r^{R_{max}} \rho \frac{V_t^2}{r} dr = P_{\infty} - \r
 * Thông số dịch chuyển:Vị trí tâm ban đầu: $(x_0, y_0) = (50.5, 50.5)$.
 * Vận tốc tịnh tiến sang trái (hướng Tây): $U_c = -5.0$ m/s; $V_c = 0.0$ m/s.
 * Thời gian khảo sát: $t = 10$ (đơn vị thời gian giả định).
-* Bước thời gian: $\delta_t = 0.01$
+* Bước thời gian: $\deltat = 0.01$
+### Công thức tính toán
+* Tọa độ tâm xoáy tại thời điểm $t$:
+* 
+$$x_t = x_0 + U_c \cdot t, \quad y_t = y_0 + V_c \cdot t$$
+
+* Khoảng cách và góc cực:
+  $r = \sqrt{(i-x_t)^2 + (j-y_t)^2}$;
+  $\theta = \operatorname{atan2}(j-y_t, i-x_t)$.
+* Trường gió tổng hợp:
+$$u_{total} = u_{vortex} + U_c, \quad v_{total} = v_{vortex} + V_c$$
+
+Trong đó $(u, v)_{vortex}$ được tính từ vận tốc tiếp tuyến $V_t(r)$ của mô hình Rankine.
 
 ## 4. Yêu cầu sản phẩm
 * **Mã nguồn:** Viết bằng Fortran, xuất dữ liệu ra định dạng binary trực tiếp *(access='direct')*.
