@@ -24,8 +24,8 @@ $$V_t(r) = V_{max} \frac{r}{R_{max}}$$
 * **Vùng ngoài** ($r > R_{max}$): Xoáy phi ma sát (Irrotational flow).
 $$V_t(r) = V_{max} \frac{R_{max}}{r}$$
 ### c. Chuyển đổi sang hệ tọa độ Descartes ($u, v$)
-$$u = -V_t \sin(\theta)$$
-$$v = V_t \cos(\theta)$$
+$$u_{vortex} = -V_t \sin(\theta)$$
+$$v_{vortex} = V_t \cos(\theta)$$
 ### d. Trường áp suất ($P$)
 Áp suất được tính toán dựa trên phương trình cân bằng lực ly tâm $\frac{1}{\rho} \frac{dP}{dr} = \frac{V_t^2}{r}$:
 * **Vùng ngoài** ($r > R_{max}$):
