@@ -40,7 +40,10 @@ $$P(r) = P(R_{max}) - \int_r^{R_{max}} \rho \frac{V_t^2}{r} dr = P_{\infty} - \r
 * Bước thời gian: $\delta t = 0.01$
 ### Công thức tính toán
 * Tọa độ tâm xoáy tại thời điểm $t$:
-$$x_t = x_0 + U_c \cdot \delta t, \quad y_t = y_0 + V_c \cdot \delta t$$
+
+$$t = \delta t * (it - 1)$$
+
+$$x_t = x_0 + U_c \cdot t, \quad y_t = y_0 + V_c \cdot t$$
 
 * Khoảng cách và góc cực:
 
