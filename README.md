@@ -44,8 +44,8 @@ $$x_t = x_0 + U_c \cdot t, \quad y_t = y_0 + V_c \cdot t$$
 
 * Khoảng cách và góc cực:
 
-  $$r = \sqrt{(i-x_t)^2 + (j-y_t)^2}$$;
-  $$\theta = \operatorname{atan2}(j-y_t, i-x_t)$$.
+  $$r = \sqrt{(i-x_t)^2 + (j-y_t)^2}$$
+  $$\theta = atan2(j-y_t, i-x_t)$$.
 
 * Trường gió tổng hợp:
 $$u_{total} = u_{vortex} + U_c, \quad v_{total} = v_{vortex} + V_c$$
