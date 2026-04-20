@@ -37,10 +37,10 @@ $$P(r) = P(R_{max}) - \int_r^{R_{max}} \rho \frac{V_t^2}{r} dr = P_{\infty} - \r
 * Thông số dịch chuyển:Vị trí tâm ban đầu: $(x_0, y_0) = (50.5, 50.5)$.
 * Vận tốc tịnh tiến sang trái (hướng Tây): $U_c = -5.0$ m/s; $V_c = 0.0$ m/s.
 * Thời gian khảo sát: $t = 10$ (đơn vị thời gian giả định).
-* Bước thời gian: $\deltat = 0.01$
+* Bước thời gian: $\delta t = 0.01$
 ### Công thức tính toán
 * Tọa độ tâm xoáy tại thời điểm $t$:
-$$x_t = x_0 + U_c \cdot t, \quad y_t = y_0 + V_c \cdot t$$
+$$x_t = x_0 + U_c \cdot \delta t, \quad y_t = y_0 + V_c \cdot \delta t$$
 
 * Khoảng cách và góc cực:
 
